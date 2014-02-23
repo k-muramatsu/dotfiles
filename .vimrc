@@ -54,8 +54,11 @@ let g:netrw_liststyle = 3
 set ruler
 "行数を表示
 set number
-"タブをスペース4つに
+"タブ
+set expandtab
 set tabstop=4
+set shiftwidth=4
+set softtabstop=0
 "スワップファイルの出力先を変更する
 set directory=~/vimfiles/tmp
 "バックアップファイルの出力先を変更する
