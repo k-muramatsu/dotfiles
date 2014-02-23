@@ -40,7 +40,7 @@ filetype plugin indent on
 
 NeoBundleCheck
 
-""VimFilerの設定
+"VimFilerの設定
 "デフォルトでIDE風のFilerを開く
 "autocmd VimEnter * VimFiler -split -simple -winwidth=40 -no-quit
 "F2を押すとファイラーの表示・非表示を切り替える
