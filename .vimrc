@@ -76,3 +76,6 @@ inoremap ( ()<Left>
 inoremap " ""<Left>
 inoremap ' ''<Left>
 inoremap < <><Left>
+"コマンドモード切り替え
+nnoremap : q:a
+nnoremap / q/a
