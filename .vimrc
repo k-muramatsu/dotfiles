@@ -77,6 +77,8 @@ inoremap ( ()<Left>
 inoremap " ""<Left>
 inoremap ' ''<Left>
 inoremap < <><Left>
+"コンマの後に自動的にスペースを挿入
+inoremap , ,<Space>
 "コマンドモード切り替え
 nnoremap : q:a
 nnoremap / q/a
