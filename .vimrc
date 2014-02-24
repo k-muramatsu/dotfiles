@@ -35,6 +35,8 @@ NeoBundle 'Shougo/vimfiler'
 NeoBundle 'tyru/caw.vim'
 "ステータスラインのカスタマイズ
 NeoBundle 'itchyny/lightline.vim'
+"起動画面を設定
+NeoBundle 'mhinz/vim-startify'
 
 filetype plugin indent on
 
