@@ -44,7 +44,7 @@ NeoBundleCheck
 "デフォルトでIDE風のFilerを開く
 "autocmd VimEnter * VimFiler -split -simple -winwidth=40 -no-quit
 "F2を押すとファイラーの表示・非表示を切り替える
-nnoremap <F2> :VimFiler -buffer-name=explorer -split -winwidth=45 -toggle -no-quit<Cr>
+nnoremap <F2> :VimFiler -buffer-name=explorer -simple -split -winwidth=45 -toggle -no-quit<Cr>
 
 let g:vimfiler_as_default_explorer = 1
 let g:vimfiler_safe_mode_by_default = 0
