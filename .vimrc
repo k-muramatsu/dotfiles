@@ -69,6 +69,7 @@ set directory=~/vimfiles/tmp
 set backupdir=~/vimfiles/tmp
 "ステータスラインを常に表示
 set laststatus=2
+
 "引用符, 括弧の設定
 inoremap { {}<Left>
 inoremap [ []<Left>
@@ -79,3 +80,5 @@ inoremap < <><Left>
 "コマンドモード切り替え
 nnoremap : q:a
 nnoremap / q/a
+"行末への移動
+nnoremap <C-\> $
