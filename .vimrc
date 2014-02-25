@@ -7,8 +7,9 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-"まだ使いこなせていない
+"統合インターフェース
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/neomru.vim'
 "vimshellを動かすのに必要らしい
 NeoBundle 'Shougo/vimproc'
 "Vim上でシェルを実行できる
