@@ -69,6 +69,8 @@ set directory=~/vimfiles/tmp
 set backupdir=~/vimfiles/tmp
 "ステータスラインを常に表示
 set laststatus=2
+"コマンドの履歴を設定
+set history=100
 
 "引用符, 括弧の設定
 inoremap { {}<Left>
@@ -79,8 +81,9 @@ inoremap ' ''<Left>
 inoremap < <><Left>
 "コンマの後に自動的にスペースを挿入
 inoremap , ,<Space>
-"コマンドモード切り替え
+"履歴検索
 nnoremap : q:a
 nnoremap / q/a
+nnoremap ? q?a
 "行末への移動
 nnoremap <C-\> $
