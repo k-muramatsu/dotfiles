@@ -38,6 +38,8 @@ NeoBundle 'tyru/caw.vim'
 NeoBundle 'itchyny/lightline.vim'
 "起動画面を設定
 NeoBundle 'mhinz/vim-startify'
+"fによるカーソル移動拡張
+NeoBundle 'rhysd/clever-f.vim'
 
 filetype plugin indent on
 
