@@ -90,6 +90,12 @@ nnoremap / q/a
 nnoremap ? q?a
 "行末への移動
 nnoremap <C-\> $
+"Ctrl+Shift+Downで選択行を真下にコピー
+"nnoremap <C-S-Down> ***
+"Alt+Shift+Downで選択行を真下に移動
+"nnoremap <A-S-Down> *** 
+"コマンドモードでCtrl+Aでコピー
+nnoremap <C-a> ggVG
 "縦方向は論理移動する
 noremap j gj
 noremap k gk
