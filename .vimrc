@@ -90,3 +90,6 @@ nnoremap / q/a
 nnoremap ? q?a
 "行末への移動
 nnoremap <C-\> $
+"縦方向は論理移動する
+noremap j gj
+noremap k gk
