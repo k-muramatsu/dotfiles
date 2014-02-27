@@ -88,6 +88,8 @@ set laststatus=2
 set history=100
 "カーソル行の強調表示
 set cursorline
+"変更中のファイルでも、保存しないで他のファイルを表示
+set hidden
 
 "引用符, 括弧の設定
 inoremap { {}<Left>
