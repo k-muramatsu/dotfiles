@@ -109,6 +109,7 @@ noremap gj j
 noremap gk k
 "<Leader><Leader>で変更があれば保存
 noremap <Leader><Leader> :up<CR>
+
 "unite.vimの設定
 "スペースキーとfキーでバッファと最近開いたファイル一覧を表示
 nnoremap <silent> <Space>f :<C-u>Unite<Space>buffer file_mru<CR>
