@@ -86,6 +86,8 @@ set backupdir=~/vimfiles/tmp
 set laststatus=2
 "コマンドの履歴を設定
 set history=100
+"カーソル行の強調表示
+set cursorline
 
 "引用符, 括弧の設定
 inoremap { {}<Left>
