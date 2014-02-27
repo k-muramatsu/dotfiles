@@ -93,5 +93,7 @@ nnoremap <C-\> $
 "縦方向は論理移動する
 noremap j gj
 noremap k gk
+noremap gj j
+noremap gk k
 "<Leader><Leader>で変更があれば保存
 noremap <Leader><Leader> :up<CR>
