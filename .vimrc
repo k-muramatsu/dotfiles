@@ -40,6 +40,8 @@ NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'mhinz/vim-startify'
 "fによるカーソル移動拡張
 NeoBundle 'rhysd/clever-f.vim'
+"選択領域の移動
+NeoBundle 't9md/vim-textmanip'
 
 filetype plugin indent on
 
@@ -54,6 +56,16 @@ nnoremap <F2> :VimFiler -buffer-name=explorer -simple -split -winwidth=45 -toggl
 let g:vimfiler_as_default_explorer = 1
 let g:vimfiler_safe_mode_by_default = 0
 let g:netrw_liststyle = 3
+
+"vim-textmanjpの設定
+"複製の設定
+xmap <M-d> <Plug>(textmanip-duplicate-down)
+nmap <M-d> <Plug>(textmanip-duplicate-down)
+"移動の設定
+xmap <C-j> <Plug>(textmanip-move-down)
+xmap <C-k> <Plug>(textmanip-move-up)
+xmap <C-h> <Plug>(textmanip-move-left)
+xmap <C-l> <Plug>(textmanip-move-right)
 
 "ルーラーを表示
 set ruler
