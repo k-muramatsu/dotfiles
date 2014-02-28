@@ -91,6 +91,9 @@ noremap gj j
 noremap gk k
 "現在のバッファと直前のバッファを交互に切り替え
 nnoremap <Leader><Leader> <C-^>
+"左右の矢印キーでバッファを移動
+nnoremap <left> :bp<CR>
+nnoremap <right> :bn<CR>
 "全選択する
 nnoremap <Leader>a ggVG
 "最後に保存したマクロを繰り返し実行する
