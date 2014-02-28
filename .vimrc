@@ -89,9 +89,9 @@ noremap j gj
 noremap k gk
 noremap gj j
 noremap gk k
-"<Leader><Leader>で現在のバッファと直前のバッファを交互に切り替え
+"現在のバッファと直前のバッファを交互に切り替え
 nnoremap <Leader><Leader> <C-^>
-"全選択
+"全選択する
 nnoremap <Leader>a ggVG
 "最後に保存したマクロを繰り返し実行する
 map Q @@
