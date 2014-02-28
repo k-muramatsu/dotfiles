@@ -89,7 +89,7 @@ noremap j gj
 noremap k gk
 noremap gj j
 noremap gk k
-"<Leader><Leader>でバッファを切り替え
+"<Leader><Leader>で現在のバッファと直前のバッファを交互に切り替え
 nnoremap <Leader><Leader> <C-^>
 "全選択
 nnoremap <Leader>a ggVG
