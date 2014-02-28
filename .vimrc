@@ -89,10 +89,10 @@ noremap j gj
 noremap k gk
 noremap gj j
 noremap gk k
-"<Leader><Leader>で変更があれば保存
-noremap <Leader><Leader> :up<CR>
+"<Leader><Leader>でバッファを切り替え
+nnoremap <Leader><Leader> <C-^>
 "全選択
-map <Leader>a ggVG
+nnoremap <Leader>a ggVG
 
 "vim-textmanjpの設定
 "複製の設定
