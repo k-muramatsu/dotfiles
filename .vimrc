@@ -22,6 +22,8 @@ NeoBundle 'violetyk/cake.vim'
 NeoBundle 'mattn/emmet-vim'
 "JSON表示用プラグイン
 NeoBundle 'elzr/vim-json'
+"JSON表示用プラグイン
+NeoBundle '5t111111/neat-json.vim'
 "タブ用プラグイン
 NeoBundle 'kana/vim-tabpagecd'
 "コメントアウト
