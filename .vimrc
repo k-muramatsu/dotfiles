@@ -43,17 +43,8 @@ NeoBundleCheck
 set guioptions-=m
 "ツールバーを非表示にする
 set guioptions-=T
-
-"vim-textmanjpの設定
-"複製の設定
-xmap <C-S-DOWN> <Plug>(textmanip-duplicate-down)
-nmap <C-S-DOWN> <Plug>(textmanip-duplicate-down)
-"移動の設定
-xmap <M-S-DOWN> <Plug>(textmanip-move-down)
-xmap <M-S-UP> <Plug>(textmanip-move-up)
-xmap <M-S-LEFT> <Plug>(textmanip-move-left)
-xmap <M-S-RIGHT> <Plug>(textmanip-move-right)
-
+"OSのクリップボードを使う
+set clipboard=unnamed
 "ルーラーを表示
 set ruler
 "行数を表示
@@ -100,6 +91,16 @@ noremap gj j
 noremap gk k
 "<Leader><Leader>で変更があれば保存
 noremap <Leader><Leader> :up<CR>
+
+"vim-textmanjpの設定
+"複製の設定
+xmap <C-S-DOWN> <Plug>(textmanip-duplicate-down)
+nmap <C-S-DOWN> <Plug>(textmanip-duplicate-down)
+"移動の設定
+xmap <M-S-DOWN> <Plug>(textmanip-move-down)
+xmap <M-S-UP> <Plug>(textmanip-move-up)
+xmap <M-S-LEFT> <Plug>(textmanip-move-left)
+xmap <M-S-RIGHT> <Plug>(textmanip-move-right)
 
 "unite.vimの設定
 "インサートモードで開始
