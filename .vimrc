@@ -10,12 +10,10 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 "統合インターフェース
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
-"vimshellを動かすのに必要らしい
-NeoBundle 'Shougo/vimproc'
-"Vim上でシェルを実行できる
-NeoBundle 'Shougo/vimshell'
-"ツールバーのアイコンを変更
-NeoBundle 'istepura/vim-toolbar-icons-silk'
+"入力補完用プラグイン
+NeoBundle 'Shougo/neocomplete'
+NeoBundle 'Shougo/neosnippet'
+NeoBundle 'Shougo/neosnippet-snippets'
 "テキストオブジェクトをもっと便利に
 NeoBundle 'tpope/vim-surround'
 "CakePHP用プラグイン
@@ -26,18 +24,10 @@ NeoBundle 'mattn/emmet-vim'
 NeoBundle 'elzr/vim-json'
 "タブ用プラグイン
 NeoBundle 'kana/vim-tabpagecd'
-"入力補完用プラグイン
-NeoBundle 'Shougo/neocomplete'
-NeoBundle 'Shougo/neosnippet'
-NeoBundle 'Shougo/neosnippet-snippets'
-"ファイラープラグイン
-NeoBundle 'Shougo/vimfiler'
 "コメントアウト
 NeoBundle 'tyru/caw.vim'
 "ステータスラインのカスタマイズ
 NeoBundle 'itchyny/lightline.vim'
-"起動画面を設定
-NeoBundle 'mhinz/vim-startify'
 "fによるカーソル移動拡張
 NeoBundle 'rhysd/clever-f.vim'
 "選択領域の移動
@@ -46,16 +36,6 @@ NeoBundle 't9md/vim-textmanip'
 filetype plugin indent on
 
 NeoBundleCheck
-
-"VimFilerの設定
-"デフォルトでIDE風のFilerを開く
-"autocmd VimEnter * VimFiler -split -simple -winwidth=40 -no-quit
-"F2を押すとファイラーの表示・非表示を切り替える
-nnoremap <F2> :VimFiler -buffer-name=explorer -simple -split -winwidth=45 -toggle -no-quit<Cr>
-
-let g:vimfiler_as_default_explorer = 1
-let g:vimfiler_safe_mode_by_default = 0
-let g:netrw_liststyle = 3
 
 "vim-textmanjpの設定
 "複製の設定
