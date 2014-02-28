@@ -89,8 +89,6 @@ noremap j gj
 noremap k gk
 noremap gj j
 noremap gk k
-"現在のバッファと直前のバッファを交互に切り替え
-nnoremap <Leader><Leader> <C-^>
 "左右の矢印キーでバッファを移動
 nnoremap <M-LEFT> :bp<CR>
 nnoremap <M-RIGHT> :bn<CR>
@@ -98,6 +96,11 @@ nnoremap <M-RIGHT> :bn<CR>
 nnoremap <Leader>a ggVG
 "最後に保存したマクロを繰り返し実行する
 map Q @@
+"vimrcとgvimrcの操作
+nnoremap <Leader>v :e $MYVIMRC<CR>
+nnoremap <Leader>g :e $MYGVIMRC<CR>
+nnoremap <Leader>w :up $MYVIMRC<Bar>:up $MYGVIMRC<CR>
+nnoremap <Leader>s :source $MYVIMRC<Bar>:source $MYGVIMRC<CR>
 
 "vim-textmanjpの設定
 "複製の設定
