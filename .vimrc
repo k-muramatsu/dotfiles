@@ -93,6 +93,8 @@ noremap gk k
 nnoremap <Leader><Leader> <C-^>
 "全選択
 nnoremap <Leader>a ggVG
+"最後に保存したマクロを繰り返し実行する
+map Q @@
 
 "vim-textmanjpの設定
 "複製の設定
