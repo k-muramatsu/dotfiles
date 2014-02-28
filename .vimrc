@@ -96,6 +96,10 @@ nnoremap <M-RIGHT> :bn<CR>
 nnoremap <Leader>a ggVG
 "最後に保存したマクロを繰り返し実行する
 map Q @@
+"新しいタブを開く
+map <C-t> :tabnew<CR>
+"開いているタブを閉じる
+map <C-w> :tabclose<CR>
 "vimrcとgvimrcの操作
 nnoremap <Leader>v :e $MYVIMRC<CR>
 nnoremap <Leader>g :e $MYGVIMRC<CR>
