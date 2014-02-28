@@ -115,12 +115,19 @@ noremap gk k
 noremap <Leader><Leader> :up<CR>
 
 "unite.vimの設定
+"インサートモードで開始
+let g:unite_enable_start_insert=1
+"prefix keyの設定
+nmap <Space> [unite]
+
 "スペースキーとfキーでバッファと最近開いたファイル一覧を表示
-nnoremap <silent> <Space>f :<C-u>Unite<Space>buffer file_mru<CR>
+nnoremap <silent> [unite]f :<C-u>Unite<Space>buffer file_mru<CR>
 "スペースキーとgキーでブックマーク一覧を表示
-nnoremap <silent> <Space>g :<C-u>Unite<Space>bookmark<CR>
+nnoremap <silent> [unite]g :<C-u>Unite<Space>bookmark<CR>
 "スペースキーとdキーでカレントディレクトリを表示
-nnoremap <silent> <Space>d :<C-u>Unite<Space>file<CR>
+nnoremap <silent> [unite]d :<C-u>Unite<Space>file<CR>
+"ブックマーク追加
+nnoremap <silent> [unite]a :<C-u>UniteBookmarkAdd<CR>
 "スペースキーを2回押すと終了する
-au FileType unite nnoremap <silent> <buffer> <Space><Space> :q<CR>
-au FileType unite inoremap <silent> <buffer> <Space><Space> <ESC>:q<CR>
+au FileType unite nnoremap <silent> <buffer> [unite][unite] :q<CR>
+au FileType unite inoremap <silent> <buffer> [unite][unite] <ESC>:q<CR>
