@@ -91,6 +91,8 @@ noremap gj j
 noremap gk k
 "<Leader><Leader>で変更があれば保存
 noremap <Leader><Leader> :up<CR>
+"全選択
+map <Leader>a ggVG
 
 "vim-textmanjpの設定
 "複製の設定
