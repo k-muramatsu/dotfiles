@@ -42,13 +42,13 @@ set guioptions-=T
 
 "vim-textmanjpの設定
 "複製の設定
-xmap <M-d> <Plug>(textmanip-duplicate-down)
-nmap <M-d> <Plug>(textmanip-duplicate-down)
+xmap <C-S-DOWN> <Plug>(textmanip-duplicate-down)
+nmap <C-S-DOWN> <Plug>(textmanip-duplicate-down)
 "移動の設定
-xmap <C-j> <Plug>(textmanip-move-down)
-xmap <C-k> <Plug>(textmanip-move-up)
-xmap <C-h> <Plug>(textmanip-move-left)
-xmap <C-l> <Plug>(textmanip-move-right)
+xmap <C-DOWN> <Plug>(textmanip-move-down)
+xmap <C-UP> <Plug>(textmanip-move-up)
+xmap <C-LEFT> <Plug>(textmanip-move-left)
+xmap <C-RIGHT> <Plug>(textmanip-move-right)
 
 "ルーラーを表示
 set ruler
