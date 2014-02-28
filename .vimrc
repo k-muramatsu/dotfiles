@@ -32,6 +32,8 @@ NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'rhysd/clever-f.vim'
 "選択領域の移動
 NeoBundle 't9md/vim-textmanip'
+"コマンドを素早く実行
+NeoBundle 'thinca/vim-quickrun'
 
 filetype plugin indent on
 
