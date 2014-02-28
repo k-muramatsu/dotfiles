@@ -37,6 +37,9 @@ filetype plugin indent on
 
 NeoBundleCheck
 
+"ツールバーを非表示にする
+set guioptions-=T
+
 "vim-textmanjpの設定
 "複製の設定
 xmap <M-d> <Plug>(textmanip-duplicate-down)
@@ -108,6 +111,9 @@ nnoremap <silent> [unite]g :<C-u>Unite<Space>bookmark<CR>
 nnoremap <silent> [unite]d :<C-u>Unite<Space>file<CR>
 "ブックマーク追加
 nnoremap <silent> [unite]a :<C-u>UniteBookmarkAdd<CR>
-"スペースキーを2回押すと終了する
-au FileType unite nnoremap <silent> <buffer> [unite][unite] :q<CR>
-au FileType unite inoremap <silent> <buffer> [unite][unite] <ESC>:q<CR>
+"unite.vimを開いている間のキーマッピング
+autocmd FileType unite call s:unite_my_settings()
+function! s:unite_my_settings()"{{{
+	"ESCでuniteを終了
+	nmap <buffer> <ESC> <Plug>(unite_exit)
+endfunction"}}}
