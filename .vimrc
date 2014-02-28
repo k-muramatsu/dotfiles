@@ -45,10 +45,10 @@ set guioptions-=T
 xmap <C-S-DOWN> <Plug>(textmanip-duplicate-down)
 nmap <C-S-DOWN> <Plug>(textmanip-duplicate-down)
 "移動の設定
-xmap <C-DOWN> <Plug>(textmanip-move-down)
-xmap <C-UP> <Plug>(textmanip-move-up)
-xmap <C-LEFT> <Plug>(textmanip-move-left)
-xmap <C-RIGHT> <Plug>(textmanip-move-right)
+xmap <M-S-DOWN> <Plug>(textmanip-move-down)
+xmap <M-S-UP> <Plug>(textmanip-move-up)
+xmap <M-S-LEFT> <Plug>(textmanip-move-left)
+xmap <M-S-RIGHT> <Plug>(textmanip-move-right)
 
 "ルーラーを表示
 set ruler
