@@ -39,6 +39,8 @@ filetype plugin indent on
 
 NeoBundleCheck
 
+"メニューバーを非表示にする
+set guioptions-=m
 "ツールバーを非表示にする
 set guioptions-=T
 
