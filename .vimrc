@@ -121,3 +121,6 @@ function! s:unite_my_settings()"{{{
 	"ESCでuniteを終了
 	nmap <buffer> <ESC> <Plug>(unite_exit)
 endfunction"}}}
+
+"JSON整形用コマンド
+command! JsonFormat :execute '%!python -mjson.tool'
