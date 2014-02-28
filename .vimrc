@@ -100,11 +100,13 @@ map Q @@
 map <C-t> :tabnew<CR>
 "開いているタブを閉じる
 map <C-w> :tabclose<CR>
-"vimrcとgvimrcの操作
+"vimrcとgvimrcの編集、保存、読み込み
 nnoremap <Leader>v :e $MYVIMRC<CR>
 nnoremap <Leader>g :e $MYGVIMRC<CR>
 nnoremap <Leader>w :up $MYVIMRC<Bar>:up $MYGVIMRC<CR>
 nnoremap <Leader>s :source $MYVIMRC<Bar>:source $MYGVIMRC<CR>
+"ENTERキーでカーソル行の真下に空行を追加
+noremap <CR> o<ESC>
 
 "vim-textmanjpの設定
 "複製の設定
