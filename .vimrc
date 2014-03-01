@@ -1,3 +1,5 @@
+"NeoBundleの設定"{{{
+
 if has('vim_starting')
   set nocompatible
   set runtimepath+=~/.vim/bundle/neobundle.vim/
@@ -42,7 +44,14 @@ NeoBundle 'h1mesuke/vim-alignta'
 filetype plugin indent on
 
 NeoBundleCheck
+"}}}
 
+"各種設定"{{{
+
+"モードラインをONにする
+set modeline
+"下から3行目までをモードラインにする
+set modelines=3
 "メニューバーを非表示にする
 set guioptions-=m
 "ツールバーを非表示にする
@@ -72,6 +81,9 @@ set history=100
 set cursorline
 "変更中のファイルでも、保存しないで他のファイルを表示
 set hidden
+"}}}
+
+"キーマッピング"{{{
 
 "引用符, 括弧の設定
 inoremap { {}<Left>
@@ -114,8 +126,9 @@ noremap <CR> o<ESC>
 "caw.vimのコメントアウト
 xmap <C-S-c> gcc
 nmap <C-S-c> gcc
+"}}}
 
-"vim-textmanjpの設定
+"vim-textmanjpの設定"{{{
 "複製の設定
 xmap <C-S-DOWN> <Plug>(textmanip-duplicate-down)
 nmap <C-S-DOWN> <Plug>(textmanip-duplicate-down)
@@ -124,13 +137,15 @@ xmap <M-S-DOWN> <Plug>(textmanip-move-down)
 xmap <M-S-UP> <Plug>(textmanip-move-up)
 xmap <M-S-LEFT> <Plug>(textmanip-move-left)
 xmap <M-S-RIGHT> <Plug>(textmanip-move-right)
+"}}}
 
-"open-browser.vimの設定
+"open-browser.vimの設定"{{{
 "カーソル下のURLをブラウザで開く
 nmap <Leader>o <Plug>(openbrowser-open)
 vmap <Leader>o <Plug>(openbrowser-open)
+"}}}
 
-"unite.vimの設定
+"unite.vimの設定 {{{1
 "インサートモードで開始
 let g:unite_enable_start_insert=1
 "prefix keyの設定
@@ -152,6 +167,13 @@ function! s:unite_my_settings()"{{{
 	" ESCでuniteを終了
 	nmap <buffer> <ESC> <Plug>(unite_exit)
 endfunction"}}}
+"}}}
 
+"ユーティリティー"{{{
 "JSON整形用コマンド
 command! JsonFormat :execute '%!python -mjson.tool'
+"}}}
+
+"vim: foldmethod=marker
+"vim: foldcolumn=3
+"vim: foldlevel=0
