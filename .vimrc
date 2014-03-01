@@ -135,12 +135,12 @@ nnoremap <silent> [unite]g :<C-u>Unite<Space>bookmark<CR>
 nnoremap <silent> [unite]d :<C-u>Unite<Space>file<CR>
 "スペースキーとrキーでレジストリを表示
 nnoremap <silent> [unite]r :<C-u>Unite<Space>register<CR>
-"ブックマーク追加
+"スペースキーとaキーでブックマーク追加
 nnoremap <silent> [unite]a :<C-u>UniteBookmarkAdd<CR>
 "unite.vimを開いている間のキーマッピング
 autocmd FileType unite call s:unite_my_settings()
 function! s:unite_my_settings()"{{{
-	"ESCでuniteを終了
+	" ESCでuniteを終了
 	nmap <buffer> <ESC> <Plug>(unite_exit)
 endfunction"}}}
 
