@@ -36,6 +36,8 @@ NeoBundle 't9md/vim-textmanip'
 NeoBundle 'thinca/vim-quickrun'
 "ブラウザを素早く開く
 NeoBundle 'tyru/open-browser.vim'
+"整列プラグイン
+NeoBundle 'h1mesuke/vim-alignta'
 
 filetype plugin indent on
 
