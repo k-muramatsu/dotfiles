@@ -34,6 +34,8 @@ NeoBundle 'rhysd/clever-f.vim'
 NeoBundle 't9md/vim-textmanip'
 "コマンドを素早く実行
 NeoBundle 'thinca/vim-quickrun'
+"ブラウザを素早く開く
+NeoBundle 'tyru/open-browser.vim'
 
 filetype plugin indent on
 
@@ -120,6 +122,11 @@ xmap <M-S-DOWN> <Plug>(textmanip-move-down)
 xmap <M-S-UP> <Plug>(textmanip-move-up)
 xmap <M-S-LEFT> <Plug>(textmanip-move-left)
 xmap <M-S-RIGHT> <Plug>(textmanip-move-right)
+
+"open-browser.vimの設定
+"カーソル下のURLをブラウザで開く
+nmap <Leader>o <Plug>(openbrowser-open)
+vmap <Leader>o <Plug>(openbrowser-open)
 
 "unite.vimの設定
 "インサートモードで開始
