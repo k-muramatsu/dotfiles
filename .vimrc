@@ -107,6 +107,9 @@ nnoremap <Leader>w :up $MYVIMRC<Bar>:up $MYGVIMRC<CR>
 nnoremap <Leader>s :source $MYVIMRC<Bar>:source $MYGVIMRC<CR>
 "ENTERキーでカーソル行の真下に空行を追加
 noremap <CR> o<ESC>
+"caw.vimのコメントアウト
+xmap <C-S-c> gcc
+nmap <C-S-c> gcc
 
 "vim-textmanjpの設定
 "複製の設定
