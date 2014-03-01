@@ -50,8 +50,6 @@ NeoBundleCheck
 
 "モードラインをONにする
 set modeline
-"下から3行目までをモードラインにする
-set modelines=3
 "メニューバーを非表示にする
 set guioptions-=m
 "ツールバーを非表示にする
@@ -145,7 +143,7 @@ nmap <Leader>o <Plug>(openbrowser-open)
 vmap <Leader>o <Plug>(openbrowser-open)
 "}}}
 
-"unite.vimの設定 {{{1
+"unite.vimの設定 {{{
 "インサートモードで開始
 let g:unite_enable_start_insert=1
 "prefix keyの設定
@@ -226,6 +224,6 @@ let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 command! JsonFormat :execute '%!python -mjson.tool'
 "}}}
 
-"vim: foldmethod=marker
-"vim: foldcolumn=3
-"vim: foldlevel=0
+" vim: foldmethod=marker
+" vim: foldcolumn=3
+" vim: foldlevel=0
