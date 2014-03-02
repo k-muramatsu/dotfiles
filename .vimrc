@@ -220,8 +220,18 @@ let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 "}}}
 
 "ユーティリティー"{{{
-"JSON整形用コマンド
-command! JsonFormat :execute '%!python -mjson.tool'
+
+"jqコマンドを実行する
+command! -nargs=? Jq call s:Jq(<f-args>)
+function! s:Jq(...)
+    if 0 == a:0
+        let l:arg = "."
+    else
+        let l:arg = a:1
+    endif
+    execute "%! jq \"" . l:arg . "\""
+endfunction
+
 "}}}
 
 " vim: foldmethod=marker
