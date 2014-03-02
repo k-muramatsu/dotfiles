@@ -24,8 +24,6 @@ NeoBundle 'violetyk/cake.vim'
 NeoBundle 'mattn/emmet-vim'
 "JSON表示用プラグイン
 NeoBundle 'elzr/vim-json'
-"タブ用プラグイン
-NeoBundle 'kana/vim-tabpagecd'
 "コメントアウト
 NeoBundle 'tyru/caw.vim'
 "ステータスラインのカスタマイズ
