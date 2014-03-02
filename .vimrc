@@ -117,7 +117,7 @@ map <Leader>w :tabclose<CR>
 "vimrcとgvimrcの編集、保存、読み込み
 nnoremap <Leader>v :e $MYVIMRC<CR>
 nnoremap <Leader>g :e $MYGVIMRC<CR>
-nnoremap <Leader>s :up $MYVIMRC<Bar>:up $MYGVIMRC<BAR>source $MYVIMRC<Bar>:source $MYGVIMRC<CR>
+nnoremap <Leader>s :up $MYVIMRC<Bar>:up $MYGVIMRC<BAR>:source $MYVIMRC<Bar>:source $MYGVIMRC<CR>
 "ENTERキーでカーソル行の真下に空行を追加
 noremap <CR> o<ESC>
 "caw.vimのコメントアウト
