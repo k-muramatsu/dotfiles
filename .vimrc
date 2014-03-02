@@ -111,14 +111,13 @@ nnoremap <Leader>a ggVG
 "最後に保存したマクロを繰り返し実行する
 map Q @@
 "新しいタブを開く
-map <C-t> :tabnew<CR>
+map <Leader>t :tabnew<CR>
 "開いているタブを閉じる
-map <C-w> :tabclose<CR>
+map <Leader>w :tabclose<CR>
 "vimrcとgvimrcの編集、保存、読み込み
 nnoremap <Leader>v :e $MYVIMRC<CR>
 nnoremap <Leader>g :e $MYGVIMRC<CR>
-nnoremap <Leader>w :up $MYVIMRC<Bar>:up $MYGVIMRC<CR>
-nnoremap <Leader>s :source $MYVIMRC<Bar>:source $MYGVIMRC<CR>
+nnoremap <Leader>s :up $MYVIMRC<Bar>:up $MYGVIMRC<BAR>source $MYVIMRC<Bar>:source $MYGVIMRC<CR>
 "ENTERキーでカーソル行の真下に空行を追加
 noremap <CR> o<ESC>
 "caw.vimのコメントアウト
@@ -154,7 +153,7 @@ nnoremap <silent> [unite]f :<C-u>Unite<Space>buffer file_mru<CR>
 "スペースキーとgキーでブックマーク一覧を表示
 nnoremap <silent> [unite]g :<C-u>Unite<Space>bookmark<CR>
 "スペースキーとdキーでカレントディレクトリを表示
-nnoremap <silent> [unite]d :<C-u>Unite<Space>file<CR>
+nnoremap <silent> [unite]d :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
 "スペースキーとrキーでレジストリを表示
 nnoremap <silent> [unite]r :<C-u>Unite<Space>register<CR>
 "スペースキーとaキーでブックマーク追加
