@@ -78,6 +78,8 @@ set history=100
 set cursorline
 "変更中のファイルでも、保存しないで他のファイルを表示
 set hidden
+"他で書き換えられたら自動で読み直す
+set autoread
 "}}}
 
 "キーマッピング"{{{
