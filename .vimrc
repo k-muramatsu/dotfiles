@@ -145,7 +145,7 @@ vmap <Leader>o <Plug>(openbrowser-open)
 
 "unite.vimの設定 {{{
 "インサートモードで開始
-let g:unite_enable_start_insert=1
+let g:unite_enable_start_insert = 1
 "prefix keyの設定
 nmap <Space> [unite]
 
