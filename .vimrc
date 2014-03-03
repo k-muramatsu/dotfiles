@@ -66,10 +66,10 @@ set shiftwidth=4
 set softtabstop=0
 "折り返ししない
 set nowrap
-"スワップファイルの出力先を変更する
-set directory=~/vimfiles/tmp
-"バックアップファイルの出力先を変更する
-set backupdir=~/vimfiles/tmp
+"スワップファイルを作成しない
+set noswapfile
+"バックアップファイルを作成しない
+set nobackup
 "ステータスラインを常に表示
 set laststatus=2
 "コマンドの履歴を設定
