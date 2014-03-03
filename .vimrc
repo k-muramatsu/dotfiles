@@ -154,6 +154,8 @@ nnoremap <silent> [unite]g :<C-u>Unite<Space>bookmark<CR>
 nnoremap <silent> [unite]d :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
 "スペースキーとrキーでレジストリを表示
 nnoremap <silent> [unite]r :<C-u>Unite<Space>register<CR>
+"スペースキーとtキーでタブを表示
+nnoremap <silent> [unite]t :<C-u>Unite<Space>tab<CR>
 "スペースキーとaキーでブックマーク追加
 nnoremap <silent> [unite]a :<C-u>UniteBookmarkAdd<CR>
 "unite.vimを開いている間のキーマッピング
