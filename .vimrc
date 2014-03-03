@@ -39,6 +39,8 @@ NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'tyru/open-browser.vim'
 "整列プラグイン
 NeoBundle 'h1mesuke/vim-alignta'
+"メモ管理
+NeoBundle 'glidenote/memolist.vim'
 
 filetype plugin indent on
 
@@ -176,6 +178,15 @@ let g:vimfiler_as_default_explorer = 1
 let g:vimfiler_safe_mode_by_default = 0
 "現在開いているバッファをIDE風に開く
 nnoremap <silent> <Leader>z :<C-u>VimFilerBufferDir -split -simple -winwidth=45 -toggle -no-quit<CR>
+"}}}
+
+"memolist.vimの設定"{{{
+"memolistの保存場所
+let g:memolist_path = "$HOME/.vim/memolist"
+"unite.vim対応
+let g:memolist_unite = 1
+let g:memolist_unite_source = "file_rec"
+let g:memolist_unite_option = "-start-insert"
 "}}}
 
 "neocomplete.vimの設定"{{{
