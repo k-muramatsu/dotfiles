@@ -146,8 +146,8 @@ let g:unite_enable_start_insert=1
 "prefix keyの設定
 nmap <Space> [unite]
 
-"スペースキー2回でカレントディレクトリを表示
-nnoremap <silent> [unite]<Space> :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
+"スペースキーとaキーでカレントディレクトリを表示
+nnoremap <silent> [unite]a :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
 "スペースキーとfキーでバッファと最近開いたファイル一覧を表示
 nnoremap <silent> [unite]f :<C-u>Unite<Space>buffer file_mru<CR>
 "スペースキーとdキーで最近開いたディレクトリを表示
