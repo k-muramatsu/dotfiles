@@ -12,6 +12,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 "統合インターフェース
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
+NeoBundle 'Shougo/vimfiler.vim'
 "入力補完用プラグイン
 NeoBundle 'Shougo/neocomplete'
 NeoBundle 'Shougo/neosnippet'
@@ -164,6 +165,15 @@ function! s:unite_my_settings()"{{{
 	" ESCでuniteを終了
 	nmap <buffer> <ESC> <Plug>(unite_exit)
 endfunction"}}}
+"}}}
+
+"vimfiler.vimの設定"{{{
+"vimデフォルトのエクスプローラをvimfilerで置き換える
+let g:vimfiler_as_default_explorer = 1
+"セーフモードを無効にした状態で起動する
+let g:vimfiler_safe_mode_by_default = 0
+"現在開いているバッファをIDE風に開く
+nnoremap <silent> <Leader>z :<C-u>VimFilerBufferDir -split -simple -winwidth=35 -toggle -no-quit<CR>
 "}}}
 
 "neocomplete.vimの設定"{{{
