@@ -1,3 +1,7 @@
+if !has('gui_running')
+  finish
+endif
+
 "起動時にウィンドウを最大化
 au GUIEnter * simalt ~x
 
