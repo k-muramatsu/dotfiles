@@ -148,16 +148,16 @@ nmap <Space> [unite]
 
 "スペースキーとfキーでバッファと最近開いたファイル一覧を表示
 nnoremap <silent> [unite]f :<C-u>Unite<Space>buffer file_mru<CR>
+"スペースキーとdキーでカレントディレクトリを表示
+nnoremap <silent> [unite]d :<C-u>Unite<Space>directory_mru<CR>
+"スペースキーとdキーでカレントディレクトリを表示
+nnoremap <silent> [unite]<Space> :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
 "スペースキーとgキーでブックマーク一覧を表示
 nnoremap <silent> [unite]g :<C-u>Unite<Space>bookmark<CR>
-"スペースキーとdキーでカレントディレクトリを表示
-nnoremap <silent> [unite]d :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
 "スペースキーとrキーでレジストリを表示
 nnoremap <silent> [unite]r :<C-u>Unite<Space>register<CR>
 "スペースキーとtキーでタブを表示
 nnoremap <silent> [unite]t :<C-u>Unite<Space>tab<CR>
-"スペースキーとaキーでブックマーク追加
-nnoremap <silent> [unite]a :<C-u>UniteBookmarkAdd<CR>
 "unite.vimを開いている間のキーマッピング
 autocmd FileType unite call s:unite_my_settings()
 function! s:unite_my_settings()"{{{
