@@ -8,7 +8,7 @@ au GUIEnter * simalt ~x
 "カラースキーマの設定
 colorscheme desert
 
-"IMEの状態でカーソルの色を変更する
+"IMEの状態でカーソルの色を変更する(日本語入力モードは赤)
 highlight CursorIM guifg=NONE guibg=Red
 
 "画面を半透明化
