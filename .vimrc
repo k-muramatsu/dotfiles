@@ -137,7 +137,10 @@
     nnoremap <Leader>s :up $MYVIMRC<Bar>:up $MYGVIMRC<BAR>:source $MYVIMRC<Bar>:source $MYGVIMRC<CR>
     "ENTERキーでカーソル行の真下に空行を追加
     noremap <CR> o<ESC>
-    "caw.vimのコメントアウト
+"}}}
+
+"caw.vimの設定"{{{
+    "Ctrl+Shift+cでコメントアウトのON/OFF
     xmap <C-S-c> gcc
     nmap <C-S-c> gcc
 "}}}
