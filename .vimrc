@@ -44,6 +44,8 @@
     NeoBundle 'nathanaelkane/vim-indent-guides'
     "テキストオブジェクトを拡張
     NeoBundle 'gcmt/wildfire.vim'
+    "特定の単語をtoggleする
+    NeoBundle 'rhysd/my-vimtoggle'
 
     filetype plugin indent on
 
