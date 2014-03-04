@@ -42,6 +42,8 @@
     NeoBundle 'glidenote/memolist.vim'
     "インデントの深さに色を付ける
     NeoBundle 'nathanaelkane/vim-indent-guides'
+    "テキストオブジェクトを拡張
+    NeoBundle 'gcmt/wildfire.vim'
 
     filetype plugin indent on
 
@@ -136,7 +138,7 @@
     nnoremap <Leader>g :e $MYGVIMRC<CR>
     nnoremap <Leader>s :up $MYVIMRC<Bar>:up $MYGVIMRC<BAR>:source $MYVIMRC<Bar>:source $MYGVIMRC<CR>
     "ENTERキーでカーソル行の真下に空行を追加
-    noremap <CR> o<ESC>
+    "noremap <CR> o<ESC>
 "}}}
 
 "caw.vimの設定"{{{
