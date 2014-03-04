@@ -212,12 +212,12 @@
     inoremap <expr><C-g> neocomplete#undo_completion()
     inoremap <expr><C-l> neocomplete#complete_common_string()
 
-    " <CR>: close popup and save indent.
+    "ENTERキーでポップアップを閉じて、インデントを保存する
     inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
     function! s:my_cr_function()
       return neocomplete#close_popup() . "\<CR>"
     endfunction
-    " タブキーで補完
+    "TABキーで補完
     inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
     " <C-h>, <BS>: close popup and delete backword char.
     inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
