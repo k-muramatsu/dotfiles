@@ -46,6 +46,8 @@
     NeoBundle 'gcmt/wildfire.vim'
     "特定のワードをtoggleする
     NeoBundle 'knt45/my-vimtoggle'
+    "Qiitaクライアント
+    NeoBundle 'mattn/qiita-vim'
 
     filetype plugin indent on
 
