@@ -50,6 +50,8 @@
     NeoBundle 'mattn/qiita-vim'
     "Vimを1つのインスタンスで使う
     NeoBundle 'thinca/vim-singleton'
+    "Gitプラグイン
+    NeoBundle 'tpope/vim-fugitive'
     
     filetype plugin indent on
 
