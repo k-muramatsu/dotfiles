@@ -48,10 +48,16 @@
     NeoBundle 'knt45/my-vimtoggle'
     "Qiitaクライアント
     NeoBundle 'mattn/qiita-vim'
-
+    "Vimを1つのインスタンスで使う
+    NeoBundle 'thinca/vim-singleton'
+    
     filetype plugin indent on
 
     NeoBundleCheck
+"}}}
+
+"vim-singletonの設定"{{{
+    call singleton#enable()
 "}}}
 
 "各種設定"{{{
