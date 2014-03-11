@@ -7,6 +7,7 @@ au GUIEnter * simalt ~x
 
 "カラースキーマの設定
 colorscheme desert
+set background=dark
 
 "IMEの状態でカーソルの色を変更する(日本語入力モードは赤)
 highlight CursorIM guifg=NONE guibg=Red
