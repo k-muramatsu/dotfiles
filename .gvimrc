@@ -10,7 +10,7 @@ colorscheme desert
 set background=dark
 
 "IMEの状態でカーソルの色を変更する(日本語入力モードは赤)
-highlight CursorIM guifg=NONE guibg=Red
+"highlight CursorIM guifg=NONE guibg=Red
 
 "画面を半透明化
 "autocmd GUIEnter * set transparency=240
