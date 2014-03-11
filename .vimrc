@@ -82,6 +82,9 @@
     set number
     "タブの設定
     set expandtab tabstop=4 shiftwidth=4 softtabstop=0
+    "インデントの設定
+    set autoindent
+    set smartindent
     "折り返ししない
     set nowrap
     "スワップファイルを作成しない
