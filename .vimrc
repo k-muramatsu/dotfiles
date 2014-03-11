@@ -67,6 +67,9 @@
     set guioptions-=m
     "ツールバーを非表示にする
     set guioptions-=T
+    "左右のスクロールバーを非表示にする
+    set guioptions-=r
+    set guioptions-=l
     "OSのクリップボードを使う
     set clipboard=unnamed
     "ルーラーを表示
