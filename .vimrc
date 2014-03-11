@@ -71,11 +71,8 @@
     set ruler
     "行数を表示
     set number
-    "タブ
-    set expandtab
-    set tabstop=4
-    set shiftwidth=4
-    set softtabstop=0
+    "タブの設定
+    set expandtab tabstop=4 shiftwidth=4 softtabstop=0
     "折り返ししない
     set nowrap
     "スワップファイルを作成しない
