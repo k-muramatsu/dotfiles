@@ -12,10 +12,6 @@
     NeoBundle 'Shougo/unite.vim'
     NeoBundle 'Shougo/neomru.vim'
     NeoBundle 'Shougo/vimfiler.vim'
-    "入力補完用プラグイン
-    NeoBundle 'Shougo/neocomplete'
-    NeoBundle 'Shougo/neosnippet'
-    NeoBundle 'Shougo/neosnippet-snippets'
     "テキストオブジェクトをもっと便利に
     NeoBundle 'tpope/vim-surround'
     "CakePHP用プラグイン
@@ -98,6 +94,8 @@
     set autoread
     "カーソルの上または下に表示する最小限の行数
     set scrolloff=5
+    "補完を有効にする
+    set wildmenu wildmode=list:full
 "}}}
 
 "キーマッピング"{{{
@@ -224,57 +222,6 @@
 
 "emmet-vimの設定"{{{
    let g:user_emmet_leader_key = '<C-z>' 
-"}}}
-
-"neocomplete.vimの設定"{{{
-    let g:acp_enableAtStartup = 0
-    let g:neocomplete#enable_at_startup = 1
-    let g:neocomplete#enable_smart_case = 1
-    let g:neocomplete#sources#syntax#min_keyword_length = 3
-    let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
-
-    "dictionaryを定義
-    let g:neocomplete#sources#dictionary#dictionaries = {
-        \ 'default' : '',
-        \ 'vimshell' : $HOME.'/.vimshell_hist',
-        \ 'scheme' : $HOME.'/.gosh_completions'
-            \ }
-
-    "keywordを定義
-    if !exists('g:neocomplete#keyword_patterns')
-        let g:neocomplete#keyword_patterns = {}
-    endif
-    let g:neocomplete#keyword_patterns['default'] = '\h\w*'
-
-    "キーマッピング
-    inoremap <expr><C-g> neocomplete#undo_completion()
-    inoremap <expr><C-l> neocomplete#complete_common_string()
-
-    "ENTERキーでポップアップを閉じて、インデントを保存する
-    inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-    function! s:my_cr_function()
-      return neocomplete#close_popup() . "\<CR>"
-    endfunction
-    "TABキーで補完
-    inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
-    " <C-h>, <BS>: close popup and delete backword char.
-    inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
-    inoremap <expr><BS>  neocomplete#smart_close_popup()."\<C-h>"
-    inoremap <expr><C-y> neocomplete#close_popup()
-    inoremap <expr><C-e> neocomplete#cancel_popup()
-
-    "omni補完を可能にする
-    autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-    autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-    autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-    autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-    autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-
-    "重いomni補完を可能にする
-    if !exists('g:neocomplete#sources#omni#input_patterns')
-      let g:neocomplete#sources#omni#input_patterns = {}
-    endif
-    let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 "}}}
 
 "vim-indent-guidesの設定"{{{
