@@ -81,16 +81,16 @@
     set nobackup
     "ステータスラインを常に表示
     set laststatus=2
-    "コマンドの履歴を設定
-    set history=100
     "変更中のファイルでも、保存しないで他のファイルを表示
     set hidden
     "他で書き換えられたら自動で読み直す
     set autoread
     "カーソルの上または下に表示する最小限の行数
     set scrolloff=5
-    "補完を有効にする
-    set wildmenu wildmode=list:full
+    "コマンドラインモードで保存する履歴件数
+    set history=100
+    "コマンドラインモードでTABキーによるファイル名補完を有効にする
+    set wildmenu wildmode=list:longest,full
 "}}}
 
 "キーマッピング"{{{
