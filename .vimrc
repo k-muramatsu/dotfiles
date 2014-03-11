@@ -121,13 +121,6 @@
     " cmap / cnoremap |    -     |  -   |       @        |     -      |  -   |    -     |
     "-----------------------------------------------------------------------------------"
 
-    "引用符, 括弧の設定
-    inoremap { {}<Left>
-    inoremap [ []<Left>
-    inoremap ( ()<Left>
-    inoremap " ""<Left>
-    inoremap ' ''<Left>
-    inoremap < <><Left>
     "コンマの後に自動的にスペースを挿入
     inoremap , ,<Space>
     "履歴検索
