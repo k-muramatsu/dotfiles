@@ -215,10 +215,6 @@
     let g:memolist_unite_option = "-start-insert"
 "}}}
 
-"emmet-vimの設定"{{{
-   let g:user_emmet_leader_key = '<C-z>' 
-"}}}
-
 "vim-indent-guidesの設定"{{{
     "自動的にvim-indent-guidesをオンにする
     let g:indent_guides_enable_on_vim_startup = 1
