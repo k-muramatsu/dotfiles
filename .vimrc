@@ -139,8 +139,6 @@
     nnoremap <M-RIGHT> :bn<CR>
     "全選択する
     nnoremap <Leader>a ggVG
-    "最後に保存したマクロを繰り返し実行する
-    map Q @@
     "新しいタブを開く
     map <Leader>t :tabnew<CR>
     "開いているタブを閉じる
