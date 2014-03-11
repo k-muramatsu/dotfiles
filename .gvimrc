@@ -19,3 +19,6 @@ autocmd FocusLost * set transparency=200
 
 "ビープ音を無効にする
 set visualbell t_vb=
+
+"どのモードでもマウスを利用できるようにする
+set mouse=a
