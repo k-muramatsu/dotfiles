@@ -305,6 +305,6 @@
     endfunction
 "}}}
 
-" vim: foldmethod=marker
-" vim: foldcolumn=3
-" vim: foldlevel=0
+" novim: foldmethod=marker
+" novim: foldcolumn=3
+" novim: foldlevel=0
