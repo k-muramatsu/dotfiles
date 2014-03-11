@@ -220,6 +220,10 @@
     let g:memolist_unite_option = "-start-insert"
 "}}}
 
+"emmet-vimの設定"{{{
+   let g:user_emmet_leader_key = '<C-Z>' 
+"}}}
+
 "neocomplete.vimの設定"{{{
     let g:acp_enableAtStartup = 0
     let g:neocomplete#enable_at_startup = 1
