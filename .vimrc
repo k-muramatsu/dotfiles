@@ -221,7 +221,7 @@
 "}}}
 
 "emmet-vimの設定"{{{
-   let g:user_emmet_leader_key = '<C-Z>' 
+   let g:user_emmet_leader_key = '<C-z>' 
 "}}}
 
 "neocomplete.vimの設定"{{{
