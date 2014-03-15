@@ -48,7 +48,9 @@
     NeoBundle 'thinca/vim-singleton'
     "Gitプラグイン
     NeoBundle 'tpope/vim-fugitive'
-    
+    "jkで高速移動
+    NeoBundle 'rhysd/accelerated-jk'
+
     filetype plugin indent on
 
     NeoBundleCheck
@@ -159,6 +161,11 @@
     "Ctrl+Shift+cでコメントアウトのON/OFF
     xmap <C-S-c> gcc
     nmap <C-S-c> gcc
+"}}}
+
+"accelerated-jkの設定"{{{
+    nmap j <Plug>(accelerated_jk_gj)
+    nmap k <Plug>(accelerated_jk_gk)
 "}}}
 
 "vim-textmanjpの設定"{{{
