@@ -50,6 +50,8 @@
     NeoBundle 'tpope/vim-fugitive'
     "jkで高速移動
     NeoBundle 'rhysd/accelerated-jk'
+    "テンプレート管理
+    NeoBundle 'mattn/sonictemplate-vim'
 
     filetype plugin indent on
 
