@@ -107,8 +107,6 @@
     set history=100
     "コマンドラインモードでTABキーによるファイル名補完を有効にする
     set wildmenu wildmode=list:longest,full
-    "検索語を強調表示(ハイライトの解除は :nohl)
-    set hlsearch
     "検索時に大文字・小文字を区別しない
     set ignorecase
     "ただし、検索後に大文字小文字が混在しているときは区別する
