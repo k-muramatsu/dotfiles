@@ -194,6 +194,8 @@
 "unite.vimの設定 {{{
     "インサートモードで開始
     let g:unite_enable_start_insert = 1
+    "ヒストリー/ヤンク機能を有効化
+    let g:unite_source_history_yank_enable =1
     "prefix keyの設定
     nmap <Space> [unite]
 
@@ -207,6 +209,8 @@
     nnoremap <silent> [unite]b :<C-u>Unite<Space>buffer<CR>
     "スペースキーとrキーでレジストリを表示
     nnoremap <silent> [unite]r :<C-u>Unite<Space>register<CR>
+    "スペースキーとhキーでヒストリ/ヤンクを表示
+    nnoremap <silent> [unite]h :<C-u>Unite<Space>history/yank<CR>
     "スペースキーとtキーでタブを表示
     nnoremap <silent> [unite]t :<C-u>Unite<Space>tab<CR>
     "unite.vimを開いている間のキーマッピング
