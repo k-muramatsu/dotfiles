@@ -12,7 +12,8 @@
     NeoBundle 'Shougo/unite.vim'
     NeoBundle 'Shougo/neomru.vim'
     NeoBundle 'Shougo/vimfiler.vim'
-    "テキストオブジェクトをもっと便利に
+    NeoBundle 'ujihisa/unite-colorscheme'
+ "テキストオブジェクトをもっと便利に
     NeoBundle 'tpope/vim-surround'
     "CakePHP用プラグイン
     NeoBundle 'violetyk/cake.vim'
