@@ -145,6 +145,9 @@
     noremap k gk
     noremap gj j
     noremap gk k
+    "置換をCtrl+rキー、redoをrキーに入れ替える
+    noremap r <C-r>
+    noremap <C-r> r
     "左右の矢印キーでバッファを移動
     nnoremap <M-LEFT> :bp<CR>
     nnoremap <M-RIGHT> :bn<CR>
