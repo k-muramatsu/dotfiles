@@ -113,6 +113,9 @@
     set ignorecase
     "ただし、検索後に大文字小文字が混在しているときは区別する
     set smartcase
+    "スペルチェックを有効にする(ただし日本語は除外する)
+    set spelllang+=cjk
+    set spell 
 "}}}
 
 "キーマッピング"{{{
