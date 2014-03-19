@@ -12,6 +12,7 @@
     NeoBundle 'Shougo/unite.vim'
     NeoBundle 'Shougo/neomru.vim'
     NeoBundle 'Shougo/vimfiler.vim'
+    NeoBundle 'Shougo/unite-outline'
     NeoBundle 'ujihisa/unite-colorscheme'
     "テキストオブジェクトをもっと便利に
     NeoBundle 'tpope/vim-surround'
@@ -214,6 +215,8 @@
     nnoremap <silent> [unite]h :<C-u>Unite<Space>history/yank<CR>
     "スペースキーとtキーでタブを表示
     nnoremap <silent> [unite]t :<C-u>Unite<Space>tab<CR>
+    "スペースキーとoキーでタブを表示
+    nnoremap <silent> [unite]o :<C-u>Unite<Space>outline<CR>
     "unite.vimを開いている間のキーマッピング
     autocmd FileType unite call s:unite_my_settings()
     function! s:unite_my_settings()"{{{
