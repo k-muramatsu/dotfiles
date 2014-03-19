@@ -198,8 +198,14 @@
     let g:unite_enable_start_insert = 1
     "ヒストリー/ヤンク機能を有効化
     let g:unite_source_history_yank_enable =1
+    "file_recのキャッシュの最小値/最大値を設定
+    let g:unite_source_rec_min_cache_files = 100
+    let g:unite_source_rec_max_cache_files = 5000
     "prefix keyの設定
     nmap <Space> [unite]
+
+    "file_rec実行時は画像ファイルを無視する
+    call unite#custom#source('file_rec/async', 'ignore_pattern', '\(png\|gif\|jpeg\|jpg\)$')
 
     "スペースキーとaキーでカレントディレクトリを表示
     nnoremap <silent> [unite]a :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
@@ -215,8 +221,10 @@
     nnoremap <silent> [unite]h :<C-u>Unite<Space>history/yank<CR>
     "スペースキーとtキーでタブを表示
     nnoremap <silent> [unite]t :<C-u>Unite<Space>tab<CR>
-    "スペースキーとoキーでタブを表示
+    "スペースキーとoキーでoutline
     nnoremap <silent> [unite]o :<C-u>Unite<Space>outline<CR>
+    "スペースキー2回でfile_rec/async:!
+    nnoremap <silent> [unite]<Space> :<C-u>Unite<Space>-start-insert<Space>file_rec/async:!<CR>
     "unite.vimを開いている間のキーマッピング
     autocmd FileType unite call s:unite_my_settings()
     function! s:unite_my_settings()"{{{
