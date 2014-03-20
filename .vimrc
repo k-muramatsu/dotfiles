@@ -220,8 +220,8 @@
     nnoremap <silent> [unite]t :<C-u>Unite<Space>tab<CR>
     "スペースキーとoキーでoutline
     nnoremap <silent> [unite]o :<C-u>Unite<Space>outline<CR>
-    "スペースキー2回でfile_rec:!
-    nnoremap <silent> [unite]<Space> :<C-u>Unite<Space>file_rec:!<CR>
+    "スペースキーとENTERキーでfile_rec:!
+    nnoremap <silent> [unite]<CR> :<C-u>Unite<Space>file_rec:!<CR>
     "unite.vimを開いている間のキーマッピング
     autocmd FileType unite call s:unite_my_settings()
     function! s:unite_my_settings()"{{{
