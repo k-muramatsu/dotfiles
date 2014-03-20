@@ -262,6 +262,13 @@
     endfunction
 "}}}
 
+"バッファが切り替わるたびにバッファのディレクトリに移動"{{{
+    augroup AutoCD
+      autocmd!
+      autocmd BufEnter * lcd %:p:h
+    augroup END
+"}}}
+
 " novim: foldmethod=marker
 " novim: foldcolumn=3
 " novim: foldlevel=0
