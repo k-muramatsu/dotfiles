@@ -38,8 +38,6 @@
     NeoBundle 'h1mesuke/vim-alignta'
     "メモ管理
     NeoBundle 'glidenote/memolist.vim'
-    "インデントの深さに色を付ける
-    NeoBundle 'nathanaelkane/vim-indent-guides'
     "テキストオブジェクトを拡張
     NeoBundle 'gcmt/wildfire.vim'
     "特定のワードをtoggleする
@@ -115,7 +113,10 @@
     set smartcase
     "スペルチェックを有効にする(ただし日本語は除外する)
     set spelllang+=cjk
-    set spell 
+    set spell
+    "不可視文字を可視化する
+    set list
+    set listchars=tab:>.,trail:_
 "}}}
 
 "キーマッピング"{{{
@@ -246,23 +247,6 @@
     let g:memolist_unite = 1
     let g:memolist_unite_source = "file_rec"
     let g:memolist_unite_option = "-start-insert"
-"}}}
-
-"vim-indent-guidesの設定"{{{
-    "自動的にvim-indent-guidesをオンにする
-    let g:indent_guides_enable_on_vim_startup = 1
-    "ガイドをスタートするインデントの量
-    let g:indent_guides_start_level = 1
-    "自動カラーを無効にする
-    let g:indent_guides_auto_colors = 0
-    "奇数インデントのカラー
-    autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#262626 ctermbg=gray
-    "偶数インデントのカラー
-    autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#3c3c3c ctermbg=darkgray
-    "ハイライト色の変化の幅
-    let g:indent_guides_color_change_percent = 30
-    "ガイドの幅
-    let g:indent_guides_guide_size = 1
 "}}}
 
 "ユーティリティー"{{{
