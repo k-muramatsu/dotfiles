@@ -204,9 +204,6 @@
     "prefix keyの設定
     nmap <Space> [unite]
 
-    "file_rec実行時は画像ファイルを無視する
-    call unite#custom#source('file_rec/async', 'ignore_pattern', '\(png\|gif\|jpeg\|jpg\)$')
-
     "スペースキーとaキーでカレントディレクトリを表示
     nnoremap <silent> [unite]a :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
     "スペースキーとfキーでバッファと最近開いたファイル一覧を表示
@@ -223,8 +220,8 @@
     nnoremap <silent> [unite]t :<C-u>Unite<Space>tab<CR>
     "スペースキーとoキーでoutline
     nnoremap <silent> [unite]o :<C-u>Unite<Space>outline<CR>
-    "スペースキー2回でfile_rec/async:!
-    nnoremap <silent> [unite]<Space> :<C-u>Unite<Space>-start-insert<Space>file_rec/async:!<CR>
+    "スペースキー2回でfile_rec:!
+    nnoremap <silent> [unite]<Space> :<C-u>Unite<Space>file_rec:!<CR>
     "unite.vimを開いている間のキーマッピング
     autocmd FileType unite call s:unite_my_settings()
     function! s:unite_my_settings()"{{{
