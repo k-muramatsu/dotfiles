@@ -52,6 +52,8 @@
     NeoBundle 'rhysd/accelerated-jk'
     "テンプレート管理
     NeoBundle 'mattn/sonictemplate-vim'
+    "editorconfig
+    NeoBundle 'editorconfig/editorconfig-vim'
 
     filetype plugin indent on
 
