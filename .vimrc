@@ -160,6 +160,9 @@
     map <Leader>t :tabnew<CR>
     "開いているタブを閉じる
     map <Leader>w :tabclose<CR>
+    "インデント後に再選択
+    vnoremap < <gv
+    vnoremap > >gv
     "vimrcとgvimrcの編集、保存、読み込み
     nnoremap <Leader>v :e $MYVIMRC<CR>
     nnoremap <Leader>g :e $MYGVIMRC<CR>
