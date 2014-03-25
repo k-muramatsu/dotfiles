@@ -168,6 +168,8 @@
     nnoremap <Leader>v :e $MYVIMRC<CR>
     nnoremap <Leader>g :e $MYGVIMRC<CR>
     nnoremap <Leader>s :up $MYVIMRC<Bar>:up $MYGVIMRC<BAR>:source $MYVIMRC<Bar>:source $MYGVIMRC<CR>
+    "ハイライトを消す
+    nmap <Esc><Esc> :nohlsearch<CR><Esc>
 "}}}
 
 "caw.vimの設定"{{{
@@ -199,9 +201,27 @@
 "}}}
 
 "vim-easymotionの設定"{{{
+    "General Configuration
     let g:EasyMotion_do_mapping = 0
-    let g:EasyMotion_smartcase = 1
+    let g:EasyMotion_enter_jump_first = 1
+    let g:EasyMotion_space_jump_first = 1
+
+    "Find Motions
     nmap s <Plug>(easymotion-s2)
+    xmap s <Plug>(easymotion-s2)
+    omap z <Plug>(easymotion-s2)
+    let g:EasyMotion_smartcase = 1
+
+    "Line Motions
+    map <Space>j <Plug>(easymotion-j)
+    map <Space>k <Plug>(easymotion-k)
+    let g:EasyMotion_startofline = 0
+
+    "Search Motions
+    "`<Tab>` & `<S-Tab>` to scroll up/down a page with next match
+    nmap g/ <Plug>(easymotion-sn)
+    xmap g/ <Plug>(easymotion-sn)
+    omap g/ <Plug>(easymotion-tn)
 "}}}
 
 "unite.vimの設定 {{{
