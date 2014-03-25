@@ -201,7 +201,7 @@
 "vim-easymotionの設定"{{{
     let g:EasyMotion_do_mapping = 0
     let g:EasyMotion_smartcase = 1
-    nmap <Space>s <Plug>(easymotion-s2)
+    nmap s <Plug>(easymotion-s2)
 "}}}
 
 "unite.vimの設定 {{{
