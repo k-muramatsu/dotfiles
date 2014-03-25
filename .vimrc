@@ -54,6 +54,8 @@
     NeoBundle 'mattn/sonictemplate-vim'
     "editorconfig
     NeoBundle 'editorconfig/editorconfig-vim'
+    "カーソル移動系
+    NeoBundle 'Lokaltog/vim-easymotion'
 
     filetype plugin indent on
 
@@ -197,6 +199,11 @@
     "カーソル下のURLをブラウザで開く
     nmap <Leader>o <Plug>(openbrowser-open)
     vmap <Leader>o <Plug>(openbrowser-open)
+"}}}
+
+"vim-easymotionの設定"{{{
+    let g:EasyMotion_do_mapping = 0
+    nmap s <Plug>(easymotion-s2)
 "}}}
 
 "unite.vimの設定 {{{
