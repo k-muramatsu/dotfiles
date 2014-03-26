@@ -173,9 +173,9 @@
 "}}}
 
 "caw.vimの設定"{{{
-    "Ctrl+Shift+cでコメントアウトのON/OFF
-    xmap <C-c> gcc
-    nmap <C-c> gcc
+    "Ctrl+cでコメントアウトのON/OFF
+    xmap <C-c> <Plug>(caw:i:toggle)
+    nmap <C-c> <Plug>(caw:i:toggle)
 "}}}
 
 "accelerated-jkの設定"{{{
