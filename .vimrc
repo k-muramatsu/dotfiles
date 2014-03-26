@@ -56,6 +56,8 @@
     NeoBundle 'editorconfig/editorconfig-vim'
     "カーソル移動系
     NeoBundle 'Lokaltog/vim-easymotion'
+    "jq
+    NeoBundle 'knt45/jq-wrapper.vim'
 
     filetype plugin indent on
 
