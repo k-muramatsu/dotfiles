@@ -172,12 +172,6 @@
     nmap <Esc><Esc> :nohlsearch<CR><Esc>
 "}}}
 
-"caw.vimの設定"{{{
-    "Ctrl+Shift+cでコメントアウトのON/OFF
-    xmap <C-S-c> gcc
-    nmap <C-S-c> gcc
-"}}}
-
 "accelerated-jkの設定"{{{
     nmap j <Plug>(accelerated_jk_gj)
     nmap k <Plug>(accelerated_jk_gk)
