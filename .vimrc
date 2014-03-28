@@ -154,6 +154,9 @@
     noremap k gk
     noremap gj j
     noremap gk k
+    "Ctrlキーを押しながらjkキーは+-と同じ動きにする
+    noremap <C-j> +
+    noremap <C-k> -
     "左右の矢印キーでバッファを移動
     nnoremap <M-LEFT> :bp<CR>
     nnoremap <M-RIGHT> :bn<CR>
