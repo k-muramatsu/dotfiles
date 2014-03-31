@@ -10,7 +10,7 @@ colorscheme molokai
 set background=dark
 
 "フォントの設定
-set guifont=Migu_1M:h12:cSHIFTJIS
+set guifont=Migu_1M:h12
 
 "IMEの状態でカーソルの色を変更する(日本語入力モードは赤)
 "highlight CursorIM guifg=NONE guibg=Red
