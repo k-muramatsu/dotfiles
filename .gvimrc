@@ -6,8 +6,11 @@ endif
 au GUIEnter * simalt ~x
 
 "カラースキーマの設定
-colorscheme desert
+colorscheme molokai
 set background=dark
+
+"フォントの設定
+set guifont=Migu_1M:h12:cSHIFTJIS
 
 "IMEの状態でカーソルの色を変更する(日本語入力モードは赤)
 "highlight CursorIM guifg=NONE guibg=Red

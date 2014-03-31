@@ -14,6 +14,13 @@
     NeoBundle 'Shougo/vimfiler.vim'
     NeoBundle 'Shougo/unite-outline'
     NeoBundle 'ujihisa/unite-colorscheme'
+    "カラースキーマ
+    NeoBundle 'altercation/vim-colors-solarized'
+    NeoBundle 'croaker/mustang-vim'
+    NeoBundle 'nanotech/jellybeans.vim'
+    NeoBundle 'tomasr/molokai'
+    NeoBundle 'w0ng/vim-hybrid'
+    NeoBundle 'sickill/vim-monokai'
     "テキストオブジェクトをもっと便利に
     NeoBundle 'tpope/vim-surround'
     "CakePHP用プラグイン
