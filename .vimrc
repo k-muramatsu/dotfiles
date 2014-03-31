@@ -11,9 +11,10 @@
     "統合インターフェース
     NeoBundle 'Shougo/unite.vim'
     NeoBundle 'Shougo/neomru.vim'
-    NeoBundle 'Shougo/vimfiler.vim'
     NeoBundle 'Shougo/unite-outline'
     NeoBundle 'ujihisa/unite-colorscheme'
+    "ファイラー
+    NeoBundle 'Shougo/vimfiler.vim'
     "カラースキーマ
     NeoBundle 'altercation/vim-colors-solarized'
     NeoBundle 'croaker/mustang-vim'
@@ -45,16 +46,15 @@
     NeoBundle 'h1mesuke/vim-alignta'
     "メモ管理
     NeoBundle 'glidenote/memolist.vim'
-    "特定のワードをtoggleする
-    NeoBundle 'knt45/my-vimtoggle'
     "Vimを1つのインスタンスで使う
     NeoBundle 'thinca/vim-singleton'
     "テンプレート管理
     NeoBundle 'mattn/sonictemplate-vim'
     "editorconfig
     NeoBundle 'editorconfig/editorconfig-vim'
-    "jq
+    "個人プラグイン
     NeoBundle 'knt45/jq-wrapper.vim'
+    NeoBundle 'knt45/my-vimtoggle'
 
     filetype plugin indent on
 
@@ -160,18 +160,18 @@
     "全選択する
     nnoremap <Leader>a ggVG
     "新しいタブを開く
-    map <Leader>t :tabnew<CR>
+    nnoremap <Leader>t :tabnew<CR>
     "開いているタブを閉じる
-    map <Leader>w :tabclose<CR>
+    nnoremap <Leader>w :tabclose<CR>
     "インデント後に再選択
     vnoremap < <gv
     vnoremap > >gv
     "vimrcとgvimrcの編集、保存、読み込み
     nnoremap <Leader>v :e $MYVIMRC<CR>
     nnoremap <Leader>g :e $MYGVIMRC<CR>
-    nnoremap <Leader>s :up $MYVIMRC<Bar>:up $MYGVIMRC<BAR>:source $MYVIMRC<Bar>:source $MYGVIMRC<CR>
+    nnoremap <Leader>s :up $MYVIMRC<Bar>:up $MYGVIMRC<BAR>:source $MYVIMRC<BAR>:source $MYGVIMRC<CR>
     "ハイライトを消す
-    nmap <Esc><Esc> :nohlsearch<CR><Esc>
+    nnoremap <Esc> :nohlsearch<CR>
 "}}}
 
 "caw.vimの設定"{{{
