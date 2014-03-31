@@ -219,9 +219,9 @@
     let g:EasyMotion_space_jump_first = 1
 
     "Find Motions
-    nmap <Space><Space> <Plug>(easymotion-s2)
-    xmap <Space><Space> <Plug>(easymotion-s2)
-    omap <Space><Space> <Plug>(easymotion-s2)
+    nmap s <Plug>(easymotion-s2)
+    xmap s <Plug>(easymotion-s2)
+    omap x <Plug>(easymotion-s2)
     let g:EasyMotion_smartcase = 1
 
     "Line Motions
