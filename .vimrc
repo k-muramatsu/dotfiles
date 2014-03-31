@@ -23,8 +23,6 @@
     NeoBundle 'sickill/vim-monokai'
     "テキストオブジェクトをもっと便利に
     NeoBundle 'tpope/vim-surround'
-    "CakePHP用プラグイン
-    NeoBundle 'violetyk/cake.vim'
     "Emmetプラグイン
     NeoBundle 'mattn/emmet-vim'
     "JSON表示用プラグイン
@@ -33,8 +31,10 @@
     NeoBundle 'tyru/caw.vim'
     "ステータスラインのカスタマイズ
     NeoBundle 'itchyny/lightline.vim'
-    "fによるカーソル移動拡張
+    "カーソル移動拡張
     NeoBundle 'rhysd/clever-f.vim'
+    NeoBundle 'rhysd/accelerated-jk'
+    NeoBundle 'Lokaltog/vim-easymotion'
     "選択領域の移動
     NeoBundle 't9md/vim-textmanip'
     "コマンドを素早く実行
@@ -45,24 +45,14 @@
     NeoBundle 'h1mesuke/vim-alignta'
     "メモ管理
     NeoBundle 'glidenote/memolist.vim'
-    "テキストオブジェクトを拡張
-    NeoBundle 'gcmt/wildfire.vim'
     "特定のワードをtoggleする
     NeoBundle 'knt45/my-vimtoggle'
-    "Qiitaクライアント
-    NeoBundle 'mattn/qiita-vim'
     "Vimを1つのインスタンスで使う
     NeoBundle 'thinca/vim-singleton'
-    "Gitプラグイン
-    NeoBundle 'tpope/vim-fugitive'
-    "jkで高速移動
-    NeoBundle 'rhysd/accelerated-jk'
     "テンプレート管理
     NeoBundle 'mattn/sonictemplate-vim'
     "editorconfig
     NeoBundle 'editorconfig/editorconfig-vim'
-    "カーソル移動系
-    NeoBundle 'Lokaltog/vim-easymotion'
     "jq
     NeoBundle 'knt45/jq-wrapper.vim'
 
