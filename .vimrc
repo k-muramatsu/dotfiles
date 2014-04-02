@@ -286,6 +286,7 @@
 "}}}
 
 "calendar.vimの設定"{{{
+    let g:calendar_views = ['year', 'month', 'week', 'clock']
     nnoremap <Leader>c :Calendar<CR>
 "}}}
 
