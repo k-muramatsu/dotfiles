@@ -249,10 +249,6 @@
     nnoremap <silent> [unite]f :<C-u>Unite<Space>buffer file_mru<CR>
     "スペースキーとdキーで最近開いたディレクトリを表示
     nnoremap <silent> [unite]d :<C-u>Unite<Space>directory_mru<CR>
-    "スペースキーとbキーでバッファを表示
-    nnoremap <silent> [unite]b :<C-u>Unite<Space>buffer<CR>
-    "スペースキーとrキーでレジストリを表示
-    nnoremap <silent> [unite]r :<C-u>Unite<Space>register<CR>
     "スペースキーとhキーでヒストリ/ヤンクを表示
     nnoremap <silent> [unite]h :<C-u>Unite<Space>history/yank<CR>
     "スペースキーとtキーでタブを表示
@@ -287,6 +283,14 @@
     let g:memolist_unite = 1
     let g:memolist_unite_source = "file_rec"
     let g:memolist_unite_option = "-start-insert"
+"}}}
+
+"calendar.vimの設定"{{{
+    nnoremap <Leader>c :Calendar<CR>
+"}}}
+
+"thumbnail.vimの設定"{{{
+    nnoremap <Leader>b :Thumbnail<CR>
 "}}}
 
 "lightline.vimの設定"{{{
