@@ -178,6 +178,8 @@
     nnoremap <Leader>s :up $MYVIMRC<Bar>:up $MYGVIMRC<BAR>:source $MYVIMRC<BAR>:source $MYGVIMRC<CR>
     "ハイライトを消す
     nnoremap <Esc> :nohlsearch<CR>
+    "ENTERキーでカーソル行の真下に空行を追加
+    nnoremap <CR> o<ESC>
 "}}}
 
 "caw.vimの設定"{{{
