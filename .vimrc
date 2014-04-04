@@ -321,20 +321,6 @@
     endfunction
 "}}}
 
-"自動保存の設定"{{{
-    set autowrite
-    set updatetime=500
-
-    function s:AutoWriteIfPossible()
-      if !&readonly && bufname('%') !=# ''
-        w
-      endif
-    endfunction
-
-    autocmd CursorHold * call s:AutoWriteIfPossible()
-    autocmd CursorHoldI * call s:AutoWriteIfPossible()
-"}}}
-
 "ユーティリティー"{{{
     "jqコマンドを実行する
     command! -nargs=? Jq call s:Jq(<f-args>)
