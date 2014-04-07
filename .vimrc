@@ -212,8 +212,8 @@
 "}}}
 
 "open-browser.vimの設定"{{{
-    nmap <Leader>g <Plug>(openbrowser-smart-search)
-    vmap <Leader>g <Plug>(openbrowser-smart-search)
+    nmap <Leader>q <Plug>(openbrowser-smart-search)
+    vmap <Leader>q <Plug>(openbrowser-smart-search)
 "}}}
 
 "vim-textobj-multiblock.vimの設定"{{{

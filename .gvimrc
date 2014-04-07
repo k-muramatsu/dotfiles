@@ -6,7 +6,7 @@ endif
 au GUIEnter * simalt ~x
 
 "カラースキーマの設定
-colorscheme desert
+colorscheme monokai
 set background=dark
 
 "フォントの設定
