@@ -290,7 +290,7 @@
     let g:vimfiler_as_default_explorer = 1
     "セーフモードを無効にした状態で起動する
     let g:vimfiler_safe_mode_by_default = 0
-
+    "自動でカレントディレクトリを移動する
     let g:vimfiler_enable_auto_cd = 1
 
     "現在開いているバッファをIDE風に開く
