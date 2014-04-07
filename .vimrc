@@ -24,6 +24,9 @@
     NeoBundle 'sickill/vim-monokai'
     "テキストオブジェクトをもっと便利に
     NeoBundle 'tpope/vim-surround'
+    NeoBundle 'kana/vim-textobj-user'
+    NeoBundle 'akiyan/vim-textobj-php'
+    NeoBundle 'osyo-manga/vim-textobj-multiblock'
     "Emmetプラグイン
     NeoBundle 'mattn/emmet-vim'
     "JSON表示用プラグイン
@@ -208,6 +211,13 @@
     "カーソル下のURLをブラウザで開く
     nmap <Leader>o <Plug>(openbrowser-open)
     vmap <Leader>o <Plug>(openbrowser-open)
+"}}}
+
+"vim-textobj-multiblock.vimの設定"{{{
+    omap ab <Plug>(textobj-multiblock-a)
+    omap ib <Plug>(textobj-multiblock-i)
+    vmap ab <Plug>(textobj-multiblock-a)
+    vmap ib <Plug>(textobj-multiblock-i)
 "}}}
 
 "vim-easymotionの設定"{{{
