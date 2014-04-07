@@ -46,7 +46,9 @@
     "ブラウザを素早く開く
     NeoBundle 'tyru/open-browser.vim'
     "整列プラグイン
-    NeoBundle 'h1mesuke/vim-alignta'
+    NeoBundle 'junegunn/vim-easy-align'
+    "対応する括弧を自動で挿入
+    NeoBundle 'jiangmiao/auto-pairs'
     "メモ管理
     NeoBundle 'glidenote/memolist.vim'
     "Vimを1つのインスタンスで使う
@@ -194,6 +196,10 @@
 "accelerated-jkの設定"{{{
     nmap j <Plug>(accelerated_jk_gj)
     nmap k <Plug>(accelerated_jk_gk)
+"}}}
+
+"vim-easy-alignの設定"{{{
+    vmap <Enter> <Plug>(EasyAlign)
 "}}}
 
 "vim-textmanjpの設定"{{{
