@@ -290,6 +290,9 @@
     let g:vimfiler_as_default_explorer = 1
     "セーフモードを無効にした状態で起動する
     let g:vimfiler_safe_mode_by_default = 0
+
+    let g:vimfiler_enable_auto_cd = 1
+
     "現在開いているバッファをIDE風に開く
     nnoremap <silent> <Leader>z :<C-u>VimFilerBufferDir -split -simple -winwidth=45 -toggle -no-quit<CR>
 "}}}
@@ -335,13 +338,6 @@
       endtry
       return ''
     endfunction
-"}}}
-
-"バッファが切り替わるたびにバッファのディレクトリに移動"{{{
-    augroup AutoCD
-      autocmd!
-      autocmd BufEnter * lcd %:p:h
-    augroup END
 "}}}
 
 " vim: foldmethod=marker
