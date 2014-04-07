@@ -8,7 +8,7 @@
 
     NeoBundleFetch 'Shougo/neobundle.vim'
 
-    "統合インターフェース
+    "Unite
     NeoBundle 'Shougo/unite.vim'
     NeoBundle 'Shougo/neomru.vim'
     NeoBundle 'Shougo/unite-outline'
