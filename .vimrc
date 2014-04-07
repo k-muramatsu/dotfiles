@@ -49,8 +49,6 @@
     NeoBundle 'junegunn/vim-easy-align'
     "対応する括弧を自動で挿入
     NeoBundle 'jiangmiao/auto-pairs'
-    "メモ管理
-    NeoBundle 'glidenote/memolist.vim'
     "Vimを1つのインスタンスで使う
     NeoBundle 'thinca/vim-singleton'
     "テンプレート管理
@@ -295,15 +293,6 @@
 
     "現在開いているバッファをIDE風に開く
     nnoremap <silent> <Leader>z :<C-u>VimFilerBufferDir -split -simple -winwidth=45 -toggle -no-quit<CR>
-"}}}
-
-"memolist.vimの設定"{{{
-    "memolistの保存場所
-    let g:memolist_path = "$HOME/.vim/memolist"
-    "unite.vim対応
-    let g:memolist_unite = 1
-    let g:memolist_unite_source = "file_rec"
-    let g:memolist_unite_option = "-start-insert"
 "}}}
 
 "calendar.vimの設定"{{{
