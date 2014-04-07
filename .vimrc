@@ -338,6 +338,5 @@
     augroup END
 "}}}
 
-" novim: foldmethod=marker
-" novim: foldcolumn=3
-" novim: foldlevel=0
+" vim: foldmethod=marker
+" vim: foldlevel=1
