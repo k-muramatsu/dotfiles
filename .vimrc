@@ -212,16 +212,15 @@
 "}}}
 
 "open-browser.vimの設定"{{{
-    "カーソル下のURLをブラウザで開く
-    nmap <Leader>o <Plug>(openbrowser-open)
-    vmap <Leader>o <Plug>(openbrowser-open)
+    nmap <Leader>g <Plug>(openbrowser-smart-search)
+    vmap <Leader>g <Plug>(openbrowser-smart-search)
 "}}}
 
 "vim-textobj-multiblock.vimの設定"{{{
-    omap a<Space> <Plug>(textobj-multiblock-a)
-    omap i<Space> <Plug>(textobj-multiblock-i)
-    vmap a<Space> <Plug>(textobj-multiblock-a)
-    vmap i<Space> <Plug>(textobj-multiblock-i)
+    omap ab <Plug>(textobj-multiblock-a)
+    omap ib <Plug>(textobj-multiblock-i)
+    vmap ab <Plug>(textobj-multiblock-a)
+    vmap ib <Plug>(textobj-multiblock-i)
 "}}}
 
 "vim-easymotionの設定"{{{
