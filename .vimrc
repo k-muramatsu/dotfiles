@@ -28,6 +28,7 @@
     NeoBundle 'akiyan/vim-textobj-php'
     NeoBundle 'osyo-manga/vim-textobj-multiblock'
     NeoBundle 'kana/vim-textobj-function'
+    NeoBundle 'thinca/vim-textobj-comment'
     "Emmetプラグイン
     NeoBundle 'mattn/emmet-vim'
     "JSON表示用プラグイン
