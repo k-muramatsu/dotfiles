@@ -1,1 +1,5 @@
+alias cp='cp -i'
+alias mv='mv -i'
 alias ll='ls -al'
+alias up='cd ..'
+alias re='vimsh ~/.vimshrc'
