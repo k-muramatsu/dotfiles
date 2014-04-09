@@ -13,6 +13,8 @@
     NeoBundle 'Shougo/neomru.vim'
     NeoBundle 'Shougo/unite-outline'
     NeoBundle 'ujihisa/unite-colorscheme'
+    NeoBundle 'Shougo/vimshell'
+    NeoBundle 'Shougo/vimproc'
     "ファイラー
     NeoBundle 'Shougo/vimfiler.vim'
     "カラースキーマ
@@ -260,6 +262,8 @@
     "prefix keyの設定
     nmap <Space> [unite]
 
+    "スペースキーとsキーでVimShellを起動
+    nnoremap <silent> [unite]s :<C-u>VimShell<CR>
     "スペースキーとaキーでカレントディレクトリを表示
     nnoremap <silent> [unite]a :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
     "スペースキーとfキーでバッファと最近開いたファイル一覧を表示
