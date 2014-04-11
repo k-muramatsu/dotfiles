@@ -13,8 +13,6 @@
     NeoBundle 'Shougo/neomru.vim'
     NeoBundle 'Shougo/unite-outline'
     NeoBundle 'ujihisa/unite-colorscheme'
-    NeoBundle 'Shougo/vimshell'
-    NeoBundle 'Shougo/vimproc'
     "ファイラー
     NeoBundle 'Shougo/vimfiler.vim'
     "カラースキーマ
@@ -267,8 +265,6 @@
     nmap <Space> [unite]
 
     "スペースキーとsキーでVimShellを起動
-    nnoremap <silent> [unite]s :<C-u>VimShell<CR>
-    "スペースキーとaキーでカレントディレクトリを表示
     nnoremap <silent> [unite]a :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
     "スペースキーとfキーでバッファと最近開いたファイル一覧を表示
     nnoremap <silent> [unite]f :<C-u>Unite<Space>buffer file_mru<CR>
