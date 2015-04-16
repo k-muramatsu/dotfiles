@@ -2,9 +2,6 @@ if !has('gui_running')
   finish
 endif
 
-"起動時にウィンドウを最大化
-au GUIEnter * simalt ~x
-
 "カラースキーマの設定
 colorscheme molokai
 set background=dark
